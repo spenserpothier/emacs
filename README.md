@@ -18,6 +18,9 @@ lot of the ideas and inspiration were largely stolen from https://github.com/xjd
 
 * Go
 * Ruby
+* Java
+* Python
+* Web
 * _(more coming soon)_
 
 # Other Modules
