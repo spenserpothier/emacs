@@ -46,5 +46,8 @@
    kept-old-versions 2
    version-control t)       ; use versioned backups
 
+(use-package gist
+  :ensure t)
+
 (provide 'misc)
 ;;; misc.el ends here
