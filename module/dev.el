@@ -83,6 +83,8 @@
 (setq tramp-default-method "ssh")
 (setq tramp-persistency-file-name (pro "var/tramp-history.el"))
 
+(use-package dockerfile-mode
+  :ensure t)
 
 (provide 'dev)
 ;;; dev.el ends here

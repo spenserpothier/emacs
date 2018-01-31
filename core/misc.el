@@ -10,7 +10,10 @@
 ; git-messenger
 
 (use-package git-gutter+
-        :ensure t)
+  :ensure t
+  :config
+  (global-git-gutter+-mode)
+  )
 (use-package magit
         :ensure t)
 (use-package auto-complete
@@ -18,8 +21,11 @@
 (ac-config-default)
 
 (use-package neotree
-        :ensure t)
-(global-set-key [f8] 'neotree-toggle)
+  :ensure t
+  :config
+  (global-set-key [f8] 'neotree-toggle)
+  )
+
 (setq neo-window-fixed-size nil)
 
 ;; These don't load properly
@@ -29,11 +35,10 @@
 ;(evil-define-key 'normal neotree-mode-map (kbd "RET") 'neotree-enter)
 
 (use-package which-key
-        :ensure t)
-(which-key-mode)
-
-
-(global-git-gutter+-mode)
+  :ensure t
+  :config
+  (which-key-mode)
+  )
 (add-hook 'git-commit-mode-hook 'turn-on-flyspell)
 
 ;; Autosave settings

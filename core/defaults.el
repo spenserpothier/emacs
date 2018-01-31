@@ -6,14 +6,24 @@
 (setq tab-always-indent 'complete)
 (setq-default indent-tabs-mode nil)   ; never use tabs to indent.
 
+(use-package dashboard
+  :config
+  (dashboard-setup-startup-hook)
+  (setq dashboard-items '((recents . 5)
+                          (bookmarks . 5)
+                          (projects . 5)
+                          ))
+  )
 ;; Encodings
 (set-terminal-coding-system 'utf-8)	; always use UTF-8
 (set-keyboard-coding-system 'utf-8)	; it is the future
 (prefer-coding-system 'utf-8)
 
 ;; Whitespace
-(require 'whitespace)
-(add-hook 'before-save-hook 'whitespace-cleanup)
+(use-package whitespace
+  :config
+  (add-hook 'before-save-hook 'whitespace-cleanup)
+  )
 
 ;;;; *scratch* buffer
 (setq initial-scratch-message nil)
