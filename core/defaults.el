@@ -40,6 +40,7 @@
 ;; Misc
 (show-paren-mode)
 
+(server-start)
 (provide 'defaults)
 
 ;;; defaults.el ends here
