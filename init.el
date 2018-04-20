@@ -15,17 +15,18 @@
 
 ;; home sweet home
 (defun pro (filename)
-  "Expand FILENAME relative to the user's Emacs dir."
+ "Expand FILENAME relative to the user's Emacs dir."
   (expand-file-name filename user-emacs-directory))
 
 ;; Load core modules
 (message "Loading Core Modules")
-(load (pro "core/defaults"))
 (load (pro "core/package"))
+(load (pro "core/defaults"))
 (load (pro "core/linux"))
 (load (pro "core/osx"))
 (load (pro "core/ui"))
-(load (pro "core/helm"))
+;(load (pro "core/helm"))
+(load (pro "core/ivy"))
 (load (pro "core/misc"))
 (load (pro "core/evil"))
 
