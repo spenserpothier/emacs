@@ -41,6 +41,10 @@
 (show-paren-mode)
 
 (server-start)
+
+(when (eq window-system nil)
+  (xterm-mouse-mode t))
+
 (provide 'defaults)
 
 ;;; defaults.el ends here

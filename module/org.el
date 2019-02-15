@@ -8,15 +8,15 @@
 
 (use-package org-bullets
    :ensure t)
-(use-package org-beautify-theme
-   :ensure t)
-
+(when (eq window-system nil)
+  (use-package org-beautify-theme
+   :ensure t))
 (org-babel-do-load-languages
  'org-babel-load-languages
  '(
    (python . t)
    (ruby . t)
-   (sh . t)
+   (shell . t)
    (plantuml . t)
    ))
 (setq org-plantuml-jar-path "/usr/share/plantuml/plantuml.jar")

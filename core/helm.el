@@ -10,6 +10,8 @@
         :ensure t)
 (use-package helm-dash
         :ensure t)
+(use-package helm-google
+        :ensure t)
 
 (require 'helm-config)
 (helm-mode t)

@@ -25,8 +25,8 @@
 (load (pro "core/linux"))
 (load (pro "core/osx"))
 (load (pro "core/ui"))
-;(load (pro "core/helm"))
-(load (pro "core/ivy"))
+(load (pro "core/helm"))
+;(load (pro "core/ivy"))
 (load (pro "core/misc"))
 (load (pro "core/evil"))
 
@@ -42,6 +42,7 @@
 ;; Load Emacs Modules
 (load (pro "module/org"))
 
+;;(load (pro "module/lsp"))
 ;; Themes
 (message "Loading Theme")
 (load (pro "theme/solarized-light"))
