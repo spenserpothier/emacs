@@ -55,7 +55,8 @@
   :config
   (eldoc-box-hover-mode 1)
   (eldoc-box-hover-at-point-mode 1)
-  (add-hook 'eglot--managed-mode-hook #'eldoc-box-hover-mode t))
+  (add-hook 'eglot--managed-mode-hook #'eldoc-box-hover-mode t)
+  (add-hook 'eglot--managed-mode-hook #'eldoc-box-hover-at-point-mode t))
 
 (use-package company-lsp
   :ensure t

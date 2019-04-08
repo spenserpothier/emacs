@@ -9,6 +9,11 @@
         :ensure t)
 (use-package key-chord
         :ensure t)
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :config
+  (evil-collection-init))
 
 ;; Evil mode settings
 (evil-mode t)
